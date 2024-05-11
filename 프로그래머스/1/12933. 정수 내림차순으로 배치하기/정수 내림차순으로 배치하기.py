@@ -1,4 +1,5 @@
 def solution(n):
-    ls = list(str(int(n)))
-    ls.sort(reverse = True)
-    return int("".join(ls))
+    ali=list(str(n))
+    ali.sort(reverse=True)
+    sorted_n="".join(ali)
+    return int(sorted_n)
