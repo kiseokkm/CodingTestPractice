@@ -1,2 +1,5 @@
 def solution(a, b):
-    return sum(range(min(a,b), max(a,b) + 1))
+    if a < b :
+        return sum(list(range(a, b+1)))
+    else:
+        return sum(list(range(b, a+1)))
