@@ -1,4 +1,3 @@
 def solution(array):
     array.sort()
-    answer = len(array)//2
-    return array[answer]
+    return array[len(array)//2]
