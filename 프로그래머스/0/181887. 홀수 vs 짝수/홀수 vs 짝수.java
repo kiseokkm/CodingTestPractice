@@ -1,16 +1,23 @@
 class Solution {
     public int solution(int[] num_list) {
-        int oddSum = 0;
-        int evenSum = 0;
-
-        for (int i = 0; i < num_list.length; i++) {
-            if (i % 2 == 0) { 
-                evenSum += num_list[i];
-            } else { 
-                oddSum += num_list[i];
-            }
+        int answer = 0;
+        int sum1 = 0;
+        int sum2 = 0;
+        
+        for(int i=0; i<num_list.length; i++) {
+        	if( i%2 == 0 ) {            
+        		sum1 += num_list[i];
+        	}else {		             
+        		sum2 += num_list[i];
+        	}
         }
-
-        return (oddSum > evenSum) ? oddSum : evenSum;
+        if( sum1 > sum2 ) {
+        	answer = sum1;
+        }else {
+        	answer = sum2;
+        }
+        
+        
+        return answer;
     }
 }
